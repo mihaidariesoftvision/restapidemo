@@ -1,0 +1,237 @@
+{
+	"info": {
+		"_postman_id": "5b7089d3-f9ca-4197-b7e9-01e8f2ed4306",
+		"name": "RESTful API - module 2 - GET Authors and Books",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET Authors",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:6058/api/authors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Author",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:6058/api/authors/76053df4-6687-4353-8937-b45556748abe",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors",
+						"76053df4-6687-4353-8937-b45556748abe"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Author (unexisting)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:6058/api/authors/a8d15573-ec65-4f48-97d2-2e7c0a726c33",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors",
+						"a8d15573-ec65-4f48-97d2-2e7c0a726c33"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Books for Author",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:6058/api/authors/76053df4-6687-4353-8937-b45556748abe/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors",
+						"76053df4-6687-4353-8937-b45556748abe",
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Books for Author (unexisting Author)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:6058/api/authors/b29e03b5-ba28-4489-8834-689de28af370/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors",
+						"b29e03b5-ba28-4489-8834-689de28af370",
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Book for Author",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:6058/api/authors/76053df4-6687-4353-8937-b45556748abe/books/bc4c35c3-3857-4250-9449-155fcf5109ec",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors",
+						"76053df4-6687-4353-8937-b45556748abe",
+						"books",
+						"bc4c35c3-3857-4250-9449-155fcf5109ec"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Book for Author (unexisting Author)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:6058/api/authors/b29e03b5-ba28-4489-8834-689de28af370/books/bc4c35c3-3857-4250-9449-155fcf5109ec",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors",
+						"b29e03b5-ba28-4489-8834-689de28af370",
+						"books",
+						"bc4c35c3-3857-4250-9449-155fcf5109ec"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Book for Author (unexisting Book)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:6058/api/authors/76053df4-6687-4353-8937-b45556748abe/books/8afc4f43-3d02-429b-90c7-1cabe201bf7a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors",
+						"76053df4-6687-4353-8937-b45556748abe",
+						"books",
+						"8afc4f43-3d02-429b-90c7-1cabe201bf7a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Author (Accept: application/json)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:6058/api/authors/76053df4-6687-4353-8937-b45556748abe",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors",
+						"76053df4-6687-4353-8937-b45556748abe"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Author (Accept: application/xml)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:6058/api/authors/76053df4-6687-4353-8937-b45556748abe",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors",
+						"76053df4-6687-4353-8937-b45556748abe"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

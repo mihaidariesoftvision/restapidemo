@@ -1,0 +1,79 @@
+{
+	"info": {
+		"_postman_id": "1d5a2a21-5b24-416b-aa31-ecf14fa53a12",
+		"name": "RESTful API - module 10 - GET & PUT Book",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET Book for Author",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:6058/api/authors/76053df4-6687-4353-8937-b45556748abe/books/bc4c35c3-3857-4250-9449-155fcf5109ec",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors",
+						"76053df4-6687-4353-8937-b45556748abe",
+						"books",
+						"bc4c35c3-3857-4250-9449-155fcf5109ec"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT Book for Author",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "If-Match",
+						"value": "\"81BFEC9246E5A270275F4F2F4DE7EA58\"",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"title\": \"The Winds of Winter - Updated\",\n  \"description\": \"Forthcoming 6th novel in A Song of Ice and Fire. - Updated\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:6058/api/authors/76053df4-6687-4353-8937-b45556748abe/books/bc4c35c3-3857-4250-9449-155fcf5109ec",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors",
+						"76053df4-6687-4353-8937-b45556748abe",
+						"books",
+						"bc4c35c3-3857-4250-9449-155fcf5109ec"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
